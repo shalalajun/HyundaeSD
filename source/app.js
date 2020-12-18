@@ -143,7 +143,7 @@ function init(){
 						var roughnessMipmapper = new RoughnessMipmapper( renderer );
 
 						var loader = new GLTFLoader().setPath( 'models/' );
-						loader.load( 'bird.glb', function ( gltf ) {
+						loader.load( 'city.glb', function ( gltf ) {
 
 							gltf.scene.traverse( function ( child ) {
               
@@ -216,9 +216,9 @@ function createControls(){
 function createCamera(){
 
     camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.x = 0;
-    camera.position.y = 0;
-    camera.position.z = 5;
+    camera.position.x = -10;
+    camera.position.y = 10;
+    camera.position.z = 30;
 
 
     // const fov = 35;
